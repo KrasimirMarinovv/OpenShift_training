@@ -1,5 +1,7 @@
 FROM golang:1.22-alpine
 
+RUN git config --global http.sslVerify false
+
 RUN mkdir /app
 
 ADD . /app
